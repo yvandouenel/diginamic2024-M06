@@ -6,9 +6,17 @@
     <title>Test formulaire</title>
   </head>
   <body>
-    <form action="http://localhost:4000/php/manageForm.php" method="get">
+    <form action="./manageForm.php" method="post">
+      <label for="firstname">Votre prénom</label>
+      <input type="text" id="firstname" name="firstname" />
+      <label for="lastname">Votre nom</label>
+      <input type="text" id="lastname" name="lastname" />
       <label for="email">Votre email</label>
       <input type="email" id="email" name="email" />
+      <label for="phone">Votre téléphone</label>
+      <input type="tel" id="phone" name="phone" />
+      <label for="comment">Commentaire</label>
+      <textarea name="comment" id="comment"></textarea>
       <button type="submit">Envoyer</button>
     </form>
   </body>
