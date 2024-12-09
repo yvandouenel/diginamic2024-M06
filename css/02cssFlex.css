@@ -1,0 +1,19 @@
+* {
+  border: 1px solid black;
+}
+/* Par défaut, l'axe principal est horizontal */
+.d-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 600px;
+  /* align-content joue sur l'axe secondaire quand il y a plusieurs "lignes"  */
+  align-content: center;
+  /* align-items joue sur l'axe secondaire  */
+  align-items: flex-start;
+  div {
+    box-sizing: border-box;
+    flex-basis: 20%;
+  }
+}

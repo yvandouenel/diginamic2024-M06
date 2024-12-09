@@ -1,0 +1,38 @@
+/* Règle css : selecteur suivi d'un bloc de code à l'intérieur duquel on trouve 
+des propriétés suivis de ":" suivi de la valeur de la propriété */
+/* Sélecteur par type ou balise */
+body {
+  background-color: #dddddd;
+}
+
+h1 {
+  color: blue;
+}
+
+/* Sélection par descendance */
+header nav ul li > a {
+  color: orangered;
+}
+h1,
+h2 {
+  font-size: 3em;
+}
+/* classe */
+.warning {
+  color: green !important;
+}
+/* id */
+#mon-lien {
+  color: pink;
+}
+
+span {
+  border: 1px solid black;
+  display: block;
+}
+p {
+  display: none;
+  margin: 50px;
+  border: 5px solid black;
+  padding: 50px;
+}
