@@ -1,0 +1,12 @@
+FROM alpine:latest
+# Créez un répertoire de travail dans le conteneur
+WORKDIR /app
+
+# Copiez le script d'entrée dans le conteneur
+COPY entrypoint.sh .
+
+# Rendez le script exécutable
+RUN chmod +x entrypoint.sh
+
+# Exécutez le script lors du démarrage du conteneur
+CMD ["./entrypoint.sh"]

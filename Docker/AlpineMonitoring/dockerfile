@@ -1,0 +1,11 @@
+FROM alpine:latest
+
+RUN apk add --no-cache curl
+
+WORKDIR /app
+COPY entrypoint.sh .
+RUN chmod +x entrypoint.sh
+
+VOLUME /data
+
+ENTRYPOINT ["/app/entrypoint.sh"]
