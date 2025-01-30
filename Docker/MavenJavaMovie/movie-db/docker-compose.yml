@@ -7,8 +7,12 @@ services:
       db:
         condition: service_healthy
     restart: on-failure
+    stdin_open: true  # docker run -i
+    tty: true        # docker run -t
     networks:
       - movie-network
+    entrypoint: /bin/bash   # Ajout de cette ligne
+    command: -c "java -jar app.jar"  # Ajout de cette ligne
 
   db:
     image: mysql:8.0

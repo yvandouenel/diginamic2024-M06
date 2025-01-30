@@ -1,11 +1,17 @@
 # But de l'application
-
+## Phase 1
 Créer un container MySQL prêt pour des connexions
 Créer un container d'application Java qui se connecte à la base de données
 L'application :
  - insère le film "Inception" dans la base
  - récupère et affiche la liste des films
  - se termine normalement (code 0)
+
+ ## Phase 2
+ Possibilité de :
+ - voir la liste des films
+ - ajouter un film
+ - quitter l'application
 
 
 Pour rendre l'application plus interactive, on pourrait :
@@ -27,3 +33,5 @@ docker-compose up
 où 
  - down -v permet de supprimer les volumes
  - build --no-cache : Construit les images Docker et ignore le cache du dockerfile
+
+
